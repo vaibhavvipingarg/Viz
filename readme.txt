@@ -3,5 +3,5 @@ Steps to install-
 
 Download .zip (Viz-master)
 Unzip folder and place in the localhost
-Access path like http://localhost:8080/Vix-master
+Access path like http://localhost:8080/Viz-master
 
