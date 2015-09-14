@@ -1,0 +1,8 @@
+<form id="form" role="form" ng-submit="updateLocation()">
+    <div class="form-group move-down">
+        <label for="Autocomplete" class="currentAddress">{{address}}</label>
+        <input type="text" id="Radius" class="form-control location-range-input" ng-model="radius" placeholder="Radius (meters)"/>
+  		<label for="Radius" class="formLabel">Meters of Address: </label>
+        <input type="text" id="Autocomplete" class="form-control location-input" placeholder="{{address}}" ng-autocomplete="location"/>
+    </div>
+</form>

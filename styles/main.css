@@ -1,0 +1,105 @@
+/*GENERIC FONT STUFF - START*/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), 
+       local('Roboto-Regular'), 
+       url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
+       format('woff');
+}
+
+body{
+    font-family: Roboto;
+}
+/*GENERIC FONT STUFF - END*/
+
+/*MAIN DISPLAY PANEL STYLES - START*/
+
+.mainContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+html, body, #map {
+  width: calc(100% - 22px);
+  height: calc(100% - 22px);
+  margin: 10px;
+  padding: 0;
+}
+
+#map {
+    margin-top: 30px;
+}
+
+.gm-style {
+    border: 1px solid lightgray;
+}
+.mainContainer .jsSlider {
+    margin: 10px;
+    /*width: 60%;*/
+    text-align: center;
+}
+.form-group {
+    margin: 10px;
+}
+
+.currentAddress {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.stations, .stations svg {
+  position: absolute;
+  overflow: visible;
+}
+
+.stations svg {
+  font: 10px sans-serif;
+  height: 20px;
+  width: 20px;
+}
+
+.stations circle {
+  fill: lightcoral;
+  stroke: yellow;
+}
+
+.stations text {
+    color: white;
+}
+
+.form-control.location-input {
+    width: calc(100% - 270px);
+    display: inline-block;
+}
+
+.formLabel {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-control.location-range-input {
+    width: 8%;
+    display: inline-block;
+}
+.info-window {
+    position: absolute;
+    visibility: hidden;
+    background: lightgray;
+}
+.info-window tbody {
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.info-window tr {
+    border-bottom: 1px solid lightgray;
+}
+.info-window td {
+    border-right: 1px solid lightgray;
+    padding: 5px 5px;
+    font-size: 11px;
+}

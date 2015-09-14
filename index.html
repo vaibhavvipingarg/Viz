@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="myApp">
+
+<head>
+  <!-- Styles -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="styles/angular-awesome-slider.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+  <div class="mainContainer">
+      <location-input></location-input>
+      <input ng-model="value" type="text" id="mySlider1" slider options="options" />
+      <div id="map">
+        <div map-visualization data="data">
+      </div>
+
+      </div>
+  </div>
+<!-- SCRIPTS -->
+  <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?1.29.1"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+  <script src="js/dist/angular-awesome-slider.min.js"></script>
+  <script src="js/services/services.js"></script>
+  <script src="js/directive/directives.js"></script>
+  <script src="js/controller/controllers.js"></script>
+  <script src="core.js"></script>
+</body>
+
+</html>
